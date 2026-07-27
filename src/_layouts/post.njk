@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<div class="max-w-3xl mx-auto px-6 py-12">
+  <a href="/" class="text-sm text-[#1e3a5f] hover:underline">← Back to Bulletins</a>
+
+  <h1 class="text-5xl heading-serif mt-6">{{ title }}</h1>
+  <div class="text-stone-500 mt-2">{{ page.date | readableDate }}</div>
+
+  {% if image %}
+    <img src="{{ image }}" alt="" class="mt-8 rounded-3xl w-full shadow">
+  {% endif %}
+
+  <div class="prose prose-lg mt-10 max-w-none">
+    {{ content | safe }}
+  </div>
+</div>

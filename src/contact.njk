@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Contact Us
+---
+
+<div class="max-w-3xl mx-auto px-6 py-12">
+  <h1 class="text-5xl heading-serif">Contact Us</h1>
+
+  <div class="mt-8 grid md:grid-cols-2 gap-10">
+    <div>
+      <h3 class="font-semibold">Mailing Address</h3>
+      <p class="mt-2 text-stone-600">St. Edward the Confessor Catholic Church<br>
+      Tallulah, Louisiana</p>
+
+      <h3 class="font-semibold mt-8">Phone</h3>
+      <p class="mt-2">(318) XXX-XXXX</p>
+    </div>
+
+    <div>
+      <h3 class="font-semibold">Email</h3>
+      <p class="mt-2">Use the form below or email us directly.</p>
+
+      <!-- Simple Netlify form -->
+      <form name="contact" method="POST" data-netlify="true" class="mt-6 space-y-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full border p-3 rounded-xl" required>
+        <input type="email" name="email" placeholder="Email Address" class="w-full border p-3 rounded-xl" required>
+        <textarea name="message" rows="5" placeholder="Message" class="w-full border p-3 rounded-2xl" required></textarea>
+        <button type="submit" class="px-8 py-3 bg-[#1e3a5f] text-white rounded-full font-medium">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>

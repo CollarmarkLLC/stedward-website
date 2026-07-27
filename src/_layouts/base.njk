@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "St. Edward the Confessor" }} | St. Edward Catholic Church</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+    .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+  <nav class="bg-white border-b">
+    <div class="max-w-5xl mx-auto px-6 flex justify-between items-center h-16">
+      <a href="/" class="font-bold text-xl heading-serif text-[#1e3a5f]">St. Edward the Confessor</a>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="/mass-times" class="hover:text-[#1e3a5f]">Mass Times</a>
+        <a href="/about" class="hover:text-[#1e3a5f]">About</a>
+        <a href="/contact" class="hover:text-[#1e3a5f]">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ content | safe }}
+
+  <footer class="bg-[#1e3a5f] text-white/90 py-12">
+    <div class="max-w-5xl mx-auto px-6 text-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-4">
+        <div>St. Edward the Confessor Catholic Church • Tallulah, Louisiana</div>
+        <div>© {{ "now" | date: "%Y" }}</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
