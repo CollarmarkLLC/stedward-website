@@ -33,8 +33,8 @@ summary: "Brief one-sentence description for the homepage."
 ## Local Development
 
 ```bash
-npm install
-npm run serve
+pnpm install
+pnpm run serve
 ```
 
 ## Deployment
