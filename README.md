@@ -2,6 +2,13 @@
 
 Weekly bulletin website for St. Edward the Confessor Parish in Tallulah, Louisiana.
 
+## Repository Authority
+
+This is a collaborative project. Its dedicated GitHub repository is the
+writable source of truth for code, issues, pull requests, and deployment.
+Agents must work GitHub-first. Forgejo may hold a one-way mirror for local
+resilience and discovery, but it must not become a second writable authority.
+
 ## Project Structure
 
 - `src/posts/` — Weekly bulletins (one `.md` file per week)
