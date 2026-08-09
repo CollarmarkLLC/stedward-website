@@ -1,0 +1,1994 @@
+{
+  "generated_by": {
+    "engine": "romcal",
+    "version": "3.0.0-dev.29",
+    "calendar": "@romcal/calendar.united-states",
+    "calendar_version": "3.0.0-dev.29",
+    "options": {
+      "epiphanyOnSunday": true,
+      "ascensionOnSunday": true,
+      "corpusChristiOnSunday": true
+    }
+  },
+  "range": {
+    "start": "2019-01-01",
+    "end": "2026-08-01"
+  },
+  "sundays": [
+    {
+      "date": "2019-01-06",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2019-01-13",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2019-01-20",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-01-27",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2019-02-03",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-02-10",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-02-17",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-02-24",
+      "title": "Seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-03-03",
+      "title": "Eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-03-10",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-03-17",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-03-24",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-03-31",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2019-04-07",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-04-14",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2019-04-21",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2019-04-28",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2019-05-05",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2019-05-12",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2019-05-19",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2019-05-26",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2019-06-02",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2019-06-09",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2019-06-16",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2019-06-23",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2019-06-30",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-07-07",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-07-14",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-07-21",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-07-28",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-08-04",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-08-11",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-08-18",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-08-25",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-09-01",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-09-08",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-09-15",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-09-22",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-09-29",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-10-06",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-10-13",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-10-20",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-10-27",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-11-03",
+      "title": "Thirty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-11-10",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-11-17",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2019-11-24",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2019-12-01",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-12-08",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-12-15",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2019-12-22",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2019-12-29",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2020-01-05",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2020-01-12",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2020-01-19",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-01-26",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2020-02-02",
+      "title": "The Presentation of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2020-02-09",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-02-16",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-02-23",
+      "title": "Seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-03-01",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-03-08",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-03-15",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-03-22",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2020-03-29",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-04-05",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2020-04-12",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2020-04-19",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2020-04-26",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2020-05-03",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2020-05-10",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2020-05-17",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2020-05-24",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2020-05-31",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2020-06-07",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2020-06-14",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2020-06-21",
+      "title": "Twelfth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-06-28",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-07-05",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-07-12",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-07-19",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-07-26",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-08-02",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-08-09",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-08-16",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-08-23",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-08-30",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-09-06",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-09-13",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-09-20",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-09-27",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-10-04",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-10-11",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-10-18",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-10-25",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-11-01",
+      "title": "All Saints",
+      "color": "white"
+    },
+    {
+      "date": "2020-11-08",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-11-15",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2020-11-22",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2020-11-29",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-12-06",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-12-13",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2020-12-20",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2020-12-27",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2021-01-03",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2021-01-10",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2021-01-17",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-01-24",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2021-01-31",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-02-07",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-02-14",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-02-21",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-02-28",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-03-07",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-03-14",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2021-03-21",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-03-28",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2021-04-04",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2021-04-11",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2021-04-18",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2021-04-25",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2021-05-02",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2021-05-09",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2021-05-16",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2021-05-23",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2021-05-30",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2021-06-06",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2021-06-13",
+      "title": "Eleventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-06-20",
+      "title": "Twelfth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-06-27",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-07-04",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-07-11",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-07-18",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-07-25",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-08-01",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-08-08",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-08-15",
+      "title": "The Assumption of the Blessed Virgin Mary",
+      "color": "white"
+    },
+    {
+      "date": "2021-08-22",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-08-29",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-09-05",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-09-12",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-09-19",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-09-26",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-10-03",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-10-10",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-10-17",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-10-24",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-10-31",
+      "title": "Thirty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-11-07",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-11-14",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2021-11-21",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2021-11-28",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-12-05",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-12-12",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2021-12-19",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2021-12-26",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2022-01-02",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2022-01-09",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2022-01-16",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-01-23",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2022-01-30",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-02-06",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-02-13",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-02-20",
+      "title": "Seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-02-27",
+      "title": "Eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-03-06",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-03-13",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-03-20",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-03-27",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2022-04-03",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-04-10",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2022-04-17",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2022-04-24",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2022-05-01",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2022-05-08",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2022-05-15",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2022-05-22",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2022-05-29",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2022-06-05",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2022-06-12",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2022-06-19",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2022-06-26",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-07-03",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-07-10",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-07-17",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-07-24",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-07-31",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-08-07",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-08-14",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-08-21",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-08-28",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-09-04",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-09-11",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-09-18",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-09-25",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-10-02",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-10-09",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-10-16",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-10-23",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-10-30",
+      "title": "Thirty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-11-06",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-11-13",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2022-11-20",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2022-11-27",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-12-04",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-12-11",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2022-12-18",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2022-12-25",
+      "title": "The Nativity of the Lord (Christmas)",
+      "color": "white"
+    },
+    {
+      "date": "2023-01-01",
+      "title": "The Octave Day of the Nativity of the Lord: Solemnity of Mary, the Holy Mother of God",
+      "color": "white"
+    },
+    {
+      "date": "2023-01-08",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2023-01-15",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-01-22",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2023-01-29",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-02-05",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-02-12",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-02-19",
+      "title": "Seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-02-26",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-03-05",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-03-12",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-03-19",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2023-03-26",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-04-02",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2023-04-09",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2023-04-16",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2023-04-23",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2023-04-30",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2023-05-07",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2023-05-14",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2023-05-21",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2023-05-28",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2023-06-04",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2023-06-11",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2023-06-18",
+      "title": "Eleventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-06-25",
+      "title": "Twelfth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-07-02",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-07-09",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-07-16",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-07-23",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-07-30",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-08-06",
+      "title": "The Transfiguration of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2023-08-13",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-08-20",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-08-27",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-09-03",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-09-10",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-09-17",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-09-24",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-10-01",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-10-08",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-10-15",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-10-22",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-10-29",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-11-05",
+      "title": "Thirty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-11-12",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-11-19",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2023-11-26",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2023-12-03",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-12-10",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-12-17",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2023-12-24",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2023-12-31",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2024-01-07",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2024-01-14",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-01-21",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2024-01-28",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-02-04",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-02-11",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-02-18",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-02-25",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-03-03",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-03-10",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2024-03-17",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-03-24",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2024-03-31",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2024-04-07",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2024-04-14",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2024-04-21",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2024-04-28",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2024-05-05",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2024-05-12",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2024-05-19",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2024-05-26",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2024-06-02",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2024-06-09",
+      "title": "Tenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-06-16",
+      "title": "Eleventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-06-23",
+      "title": "Twelfth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-06-30",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-07-07",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-07-14",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-07-21",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-07-28",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-08-04",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-08-11",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-08-18",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-08-25",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-09-01",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-09-08",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-09-15",
+      "title": "Twenty-fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-09-22",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-09-29",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-10-06",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-10-13",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-10-20",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-10-27",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-11-03",
+      "title": "Thirty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-11-10",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-11-17",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2024-11-24",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2024-12-01",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-12-08",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-12-15",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2024-12-22",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2024-12-29",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2025-01-05",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2025-01-12",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2025-01-19",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-01-26",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2025-02-02",
+      "title": "The Presentation of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2025-02-09",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-02-16",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-02-23",
+      "title": "Seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-03-02",
+      "title": "Eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-03-09",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-03-16",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-03-23",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-03-30",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2025-04-06",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-04-13",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2025-04-20",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2025-04-27",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2025-05-04",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2025-05-11",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2025-05-18",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2025-05-25",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2025-06-01",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2025-06-08",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2025-06-15",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2025-06-22",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2025-06-29",
+      "title": "Saints Peter and Paul, Apostles",
+      "color": "red"
+    },
+    {
+      "date": "2025-07-06",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-07-13",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-07-20",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-07-27",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-08-03",
+      "title": "Eighteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-08-10",
+      "title": "Nineteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-08-17",
+      "title": "Twentieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-08-24",
+      "title": "Twenty-first Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-08-31",
+      "title": "Twenty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-09-07",
+      "title": "Twenty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-09-14",
+      "title": "The Exaltation of the Holy Cross",
+      "color": "red"
+    },
+    {
+      "date": "2025-09-21",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-09-28",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-10-05",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-10-12",
+      "title": "Twenty-eighth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-10-19",
+      "title": "Twenty-ninth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-10-26",
+      "title": "Thirtieth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-11-02",
+      "title": "The Commemoration of All the Faithful Departed (All Soul’s Day)",
+      "color": "purple"
+    },
+    {
+      "date": "2025-11-09",
+      "title": "Thirty-second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-11-16",
+      "title": "Thirty-third Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2025-11-23",
+      "title": "Our Lord Jesus Christ, King of the Universe",
+      "color": "white"
+    },
+    {
+      "date": "2025-11-30",
+      "title": "First Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-12-07",
+      "title": "Second Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-12-14",
+      "title": "Third Sunday of Advent",
+      "color": "rose"
+    },
+    {
+      "date": "2025-12-21",
+      "title": "Fourth Sunday of Advent",
+      "color": "purple"
+    },
+    {
+      "date": "2025-12-28",
+      "title": "The Holy Family of Jesus, Mary and Joseph",
+      "color": "white"
+    },
+    {
+      "date": "2026-01-04",
+      "title": "The Epiphany of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2026-01-11",
+      "title": "The Baptism of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2026-01-18",
+      "title": "Second Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-01-25",
+      "title": "Third Sunday in Ordinary Time, or Sunday of the Word of God",
+      "color": "green"
+    },
+    {
+      "date": "2026-02-01",
+      "title": "Fourth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-02-08",
+      "title": "Fifth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-02-15",
+      "title": "Sixth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-02-22",
+      "title": "First Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2026-03-01",
+      "title": "Second Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2026-03-08",
+      "title": "Third Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2026-03-15",
+      "title": "Fourth Sunday of Lent",
+      "color": "rose"
+    },
+    {
+      "date": "2026-03-22",
+      "title": "Fifth Sunday of Lent",
+      "color": "purple"
+    },
+    {
+      "date": "2026-03-29",
+      "title": "Palm Sunday of the Passion of the Lord",
+      "color": "red"
+    },
+    {
+      "date": "2026-04-05",
+      "title": "Easter Sunday of the Resurrection of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2026-04-12",
+      "title": "Second Sunday of Easter or Sunday of Divine Mercy",
+      "color": "white"
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Third Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Fourth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2026-05-03",
+      "title": "Fifth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2026-05-10",
+      "title": "Sixth Sunday of Easter",
+      "color": "white"
+    },
+    {
+      "date": "2026-05-17",
+      "title": "The Ascension of the Lord",
+      "color": "white"
+    },
+    {
+      "date": "2026-05-24",
+      "title": "Pentecost Sunday",
+      "color": "red"
+    },
+    {
+      "date": "2026-05-31",
+      "title": "The Most Holy Trinity",
+      "color": "white"
+    },
+    {
+      "date": "2026-06-07",
+      "title": "The Most Holy Body and Blood of Christ",
+      "color": "white"
+    },
+    {
+      "date": "2026-06-14",
+      "title": "Eleventh Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-06-21",
+      "title": "Twelfth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-06-28",
+      "title": "Thirteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-07-05",
+      "title": "Fourteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Fifteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-07-19",
+      "title": "Sixteenth Sunday in Ordinary Time",
+      "color": "green"
+    },
+    {
+      "date": "2026-07-26",
+      "title": "Seventeenth Sunday in Ordinary Time",
+      "color": "green"
+    }
+  ]
+}

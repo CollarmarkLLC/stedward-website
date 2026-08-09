@@ -18,22 +18,26 @@ resilience and discovery, but it must not become a second writable authority.
 ## Adding a New Bulletin (Very Simple)
 
 1. Create a new Markdown file in `src/posts/` with the naming convention:
-   `YYYY-MM-DD-bulletin.md`
+   `YYYY-MM-DD.md`, where the date is the Sunday covered by the bulletin.
 
 2. Use this frontmatter at the top:
 
 ```yaml
 ---
-title: "August 3, 2026 – Eighteenth Sunday in Ordinary Time"
-date: 2026-08-03
-image: /images/bulletins/2026-08-03.jpg
-summary: "Brief one-sentence description for the homepage."
+date: 2026-07-26
+title: "Seventeenth Sunday in Ordinary Time"
+image: /images/bulletins/green.jpg
 ---
 ```
 
+The historical bulletin collection uses exactly these three frontmatter fields.
+Titles and liturgical colors come from the generated Sunday projection in
+`data/bulletin-sundays-2019-2026.json`; do not infer them from prose in an old
+bulletin. The image filename is the lowercase liturgical color.
+
 3. Add the rest of the bulletin content below the frontmatter.
 
-4. Place the social-share image in `src/images/bulletins/`.
+4. Ensure the corresponding color image exists in `src/images/bulletins/`.
 
 5. Commit and push — Netlify will automatically rebuild the site.
 
