@@ -48,6 +48,9 @@ until their bulletin date arrives.
 
 3. Add the rest of the bulletin content below the frontmatter.
 
+   Do not include Obsidian `%% comment %%` syntax. Individual bulletin pages
+   intentionally render the bulletin text without the liturgical card image.
+
 4. Ensure the corresponding color image exists in `src/images/bulletins/`.
 
 5. Commit and push — Netlify will automatically rebuild the site.

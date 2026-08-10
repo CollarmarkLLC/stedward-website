@@ -8,11 +8,7 @@ layout: base.njk
   <h1 class="text-5xl heading-serif mt-6">{{ title }}</h1>
   <div class="text-stone-500 mt-2">{{ page.date | readableDate }}</div>
 
-  {% if image %}
-    <img src="{{ image }}" alt="" class="mt-8 rounded-3xl w-full shadow">
-  {% endif %}
-
-  <div class="prose prose-lg mt-10 max-w-none">
+  <div class="prose prose-lg mt-8 max-w-none">
     {{ content | safe }}
   </div>
 </div>
