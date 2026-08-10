@@ -15,7 +15,8 @@ resilience and discovery, but it must not become a second writable authority.
 - `src/images/` — Photos and bulletin social images
 - Homepage (`index.njk`) presents the six newest bulletins, a disabled
   subscription-form stub, parish Mass, Confession, and catechesis times, and
-  pastoral-service and livestream guidance
+  pastoral-service and livestream guidance, followed by a disabled contact-form
+  stub and parish map
 - `past-bulletins.njk` provides the remaining archive in pages of 24 bulletins
 
 ## Adding a New Bulletin (Very Simple)

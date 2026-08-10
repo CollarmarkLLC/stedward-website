@@ -212,3 +212,52 @@ title: Home
     </div>
   </div>
 </section>
+
+<!-- Contact and location -->
+<section class="bg-white border-t border-stone-200">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <div class="max-w-2xl mb-10">
+      <span class="text-xs uppercase tracking-[2px] font-semibold text-parish-blue">Contact &amp; Location</span>
+      <h2 class="text-4xl md:text-5xl heading-serif mt-1">Get in Touch</h2>
+      <p class="mt-3 text-stone-600">Contact St. Edward or find the parish in Tallulah.</p>
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-2">
+      <div class="rounded-3xl border border-stone-200 bg-stone-50 p-6 md:p-8">
+        <form class="space-y-5" aria-label="Contact form coming soon">
+          <div>
+            <label for="contact-name" class="block text-sm font-semibold text-stone-700">Name</label>
+            <input id="contact-name" type="text" disabled class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed">
+          </div>
+          <div>
+            <label for="contact-email" class="block text-sm font-semibold text-stone-700">Email address</label>
+            <input id="contact-email" type="email" disabled class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed">
+          </div>
+          <div>
+            <label for="contact-message" class="block text-sm font-semibold text-stone-700">Message</label>
+            <textarea id="contact-message" rows="5" disabled class="mt-2 w-full resize-none rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed"></textarea>
+          </div>
+          <button type="button" disabled class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white opacity-60 disabled:cursor-not-allowed">Send Message</button>
+          <p class="text-xs text-stone-500">Online messages are coming soon. This form is not yet active.</p>
+        </form>
+      </div>
+
+      <div class="overflow-hidden rounded-3xl border border-stone-200 bg-stone-100 min-h-[420px] flex flex-col">
+        <iframe
+          title="Map showing St. Edward the Confessor Catholic Church"
+          src="https://www.google.com/maps?q=204%20E%20Bayou%20Dr%2C%20Tallulah%2C%20LA%2071282&amp;output=embed"
+          class="min-h-[350px] w-full flex-1 border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+        <div class="bg-white p-5">
+          <p class="font-semibold text-stone-800">St. Edward the Confessor Catholic Church</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=204%20E%20Bayou%20Dr%2C%20Tallulah%2C%20LA%2071282" class="mt-1 inline-block text-sm text-parish-blue hover:underline">
+            204 E Bayou Dr, Tallulah, LA 71282 →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
