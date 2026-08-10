@@ -13,7 +13,8 @@ resilience and discovery, but it must not become a second writable authority.
 
 - `src/posts/` — Weekly bulletins (one `.md` file per week)
 - `src/images/` — Photos and bulletin social images
-- Homepage (`index.njk`) automatically lists all bulletins in reverse chronological order
+- Homepage (`index.njk`) lists the six newest bulletins in reverse chronological order
+- `past-bulletins.njk` provides the remaining archive in pages of 24 bulletins
 
 ## Adding a New Bulletin (Very Simple)
 

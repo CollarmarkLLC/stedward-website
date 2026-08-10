@@ -19,6 +19,19 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // The home page shows the six newest issues; the archive begins after them.
+  eleventyConfig.addCollection("recentBulletins", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
+      return b.date - a.date;
+    }).slice(0, 6);
+  });
+
+  eleventyConfig.addCollection("pastBulletins", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
+      return b.date - a.date;
+    }).slice(6);
+  });
+
   return {
     dir: {
       input: "src",
