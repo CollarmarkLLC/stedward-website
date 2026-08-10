@@ -35,6 +35,13 @@ Titles and liturgical colors come from the generated Sunday projection in
 `data/bulletin-sundays-2019-2026.json`; do not infer them from prose in an old
 bulletin. The image filename is the lowercase liturgical color.
 
+The current source archive for historical reconciliation is
+`/Users/ryan/My Drive (frhumphries@gmail.com)/St Edward/Bulletin`. Copy source
+files into this repository; never move or modify the source archive. As of
+2026-08-09, the website contains one post for every Sunday from 2019-01-06
+through 2026-08-09. Future dated source templates are intentionally excluded
+until their bulletin date arrives.
+
 3. Add the rest of the bulletin content below the frontmatter.
 
 4. Ensure the corresponding color image exists in `src/images/bulletins/`.
