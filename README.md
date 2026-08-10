@@ -67,6 +67,13 @@ pnpm run serve
 
 ## Notes
 
-- The blog is the homepage.
-- All posts are sorted newest first.
-- Netlify Forms are ready on the Contact page.
+- V1 intentionally exposes only the homepage, the paginated Past Bulletins
+  archive, and individual bulletin pages.
+- All posts are sorted newest first and inherit the accessible `post.njk`
+  layout through `src/posts/posts.json`.
+- The subscription and contact forms are visible but disabled until their
+  future Netlify Forms implementation is approved.
+- The 2026-08-09 local Lighthouse launch audit scored 99 Performance and 100
+  each for Accessibility, Best Practices, and SEO on the homepage. The archive
+  and a representative bulletin each scored 100 for Accessibility, Best
+  Practices, and SEO.

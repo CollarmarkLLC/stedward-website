@@ -22,7 +22,10 @@ title: Home
   
   <!-- Hero background image -->
   <div class="absolute inset-0 opacity-30">
-    <img src="/images/7148230407_80cc49e672_o.jpg" alt="" class="w-full h-full object-cover object-[center_30%]">
+    <picture>
+      <source type="image/webp" srcset="/images/hero-stained-glass-640.webp 640w, /images/hero-stained-glass-960.webp 960w, /images/hero-stained-glass-1280.webp 1280w" sizes="100vw">
+      <img src="/images/7148230407_80cc49e672_o.jpg" alt="" width="1704" height="1180" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover object-[center_30%]">
+    </picture>
   </div>
 </header>
 
@@ -43,7 +46,11 @@ title: Home
       <article class="bulletin-card bg-white border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
         {% if post.data.image %}
           <div class="aspect-[16/9] bg-stone-100 overflow-hidden">
-            <img src="{{ post.data.image }}" alt="" class="w-full h-full object-cover">
+            <picture>
+              {% set cardImage = post.data.image | bulletinCardImage %}
+              {% if cardImage %}<source type="image/webp" srcset="{{ cardImage }}">{% endif %}
+              <img src="{{ post.data.image }}" alt="" loading="lazy" class="w-full h-full object-cover">
+            </picture>
           </div>
         {% else %}
           <div class="aspect-[16/9] bg-stone-100 flex items-center justify-center">

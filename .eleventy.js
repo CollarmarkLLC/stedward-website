@@ -12,6 +12,15 @@ module.exports = function(eleventyConfig) {
     }).format(dateObj);
   });
 
+  // Return an optimized card image only for variants generated in this repo.
+  eleventyConfig.addFilter("bulletinCardImage", (imagePath) => {
+    const optimizedColors = new Set(["white", "green", "purple", "red", "rose"]);
+    const match = imagePath && imagePath.match(/\/([^/]+)\.jpg$/);
+    return match && optimizedColors.has(match[1])
+      ? imagePath.replace(/\.jpg$/, "-card.webp")
+      : null;
+  });
+
   // Sort posts by date descending
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {

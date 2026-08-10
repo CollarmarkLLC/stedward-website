@@ -32,7 +32,11 @@ permalink: "past-bulletins/{% if pagination.pageNumber > 0 %}{{ pagination.pageN
     {% for post in bulletins %}
       <article class="bulletin-card bg-white border border-stone-200 rounded-3xl overflow-hidden flex flex-col">
         <div class="aspect-[16/9] bg-stone-100 overflow-hidden">
-          <img src="{{ post.data.image or '/images/Inscription.jpeg' }}" alt="" class="w-full h-full object-cover">
+          <picture>
+            {% set cardImage = post.data.image | bulletinCardImage %}
+            {% if cardImage %}<source type="image/webp" srcset="{{ cardImage }}">{% endif %}
+            <img src="{{ post.data.image or '/images/Inscription.jpeg' }}" alt="" loading="lazy" class="w-full h-full object-cover">
+          </picture>
         </div>
 
         <div class="p-6 flex-1 flex flex-col">

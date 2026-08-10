@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['Georgia', 'Times New Roman', 'serif'],
       },
       colors: {
         'parish-blue': '#1e3a5f',
