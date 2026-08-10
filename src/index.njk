@@ -90,8 +90,8 @@ title: Home
   </div>
 </div>
 
-<!-- Bulletin subscription stub -->
-<section class="bg-stone-100 border-y border-stone-200">
+<!-- Bulletin subscription -->
+<section id="subscribe" class="bg-stone-100 border-y border-stone-200">
   <div class="max-w-6xl mx-auto px-6 py-14 md:py-16">
     <div class="grid gap-8 md:grid-cols-[1fr_1.1fr] md:items-center">
       <div>
@@ -103,14 +103,18 @@ title: Home
       </div>
 
       <div class="rounded-3xl bg-white border border-stone-200 p-6 md:p-8 shadow-sm">
-        <form class="flex flex-col sm:flex-row gap-3" aria-label="Bulletin subscription coming soon">
+        <form name="bulletin-subscribe" method="POST" data-netlify="true" netlify-honeypot="website" class="flex flex-col sm:flex-row gap-3" aria-label="Bulletin subscription">
+          <input type="hidden" name="form-name" value="bulletin-subscribe">
+          <p class="hidden" aria-hidden="true">
+            <label>Do not fill this out if you are human: <input name="website" tabindex="-1" autocomplete="off"></label>
+          </p>
           <label for="bulletin-email" class="sr-only">Email address</label>
-          <input id="bulletin-email" type="email" placeholder="Email address" disabled class="min-w-0 flex-1 rounded-full border border-stone-300 bg-stone-50 px-5 py-3 text-stone-500 disabled:cursor-not-allowed">
-          <button type="button" disabled class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white opacity-60 disabled:cursor-not-allowed">
+          <input id="bulletin-email" name="email" type="email" autocomplete="email" placeholder="Email address" required class="min-w-0 flex-1 rounded-full border border-stone-300 bg-stone-50 px-5 py-3 text-stone-900 focus:border-parish-blue focus:outline-none focus:ring-2 focus:ring-parish-blue/20">
+          <button type="submit" class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white hover:opacity-90 transition">
             Sign Up
           </button>
         </form>
-        <p class="mt-3 text-xs text-stone-500">Email subscriptions are coming soon. This form is not yet active.</p>
+        <p class="mt-3 text-xs text-stone-500">You will receive an email asking you to confirm your subscription.</p>
       </div>
     </div>
   </div>
@@ -235,20 +239,24 @@ title: Home
 
     <div class="grid gap-8 lg:grid-cols-2">
       <div class="rounded-3xl border border-stone-200 bg-stone-50 p-6 md:p-8">
-        <form class="space-y-5" aria-label="Contact form coming soon">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="website" class="space-y-5" aria-label="Contact form">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden" aria-hidden="true">
+            <label>Do not fill this out if you are human: <input name="website" tabindex="-1" autocomplete="off"></label>
+          </p>
           <div>
             <label for="contact-name" class="block text-sm font-semibold text-stone-700">Name</label>
-            <input id="contact-name" type="text" disabled class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed">
+            <input id="contact-name" name="name" type="text" autocomplete="name" required class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 focus:border-parish-blue focus:outline-none focus:ring-2 focus:ring-parish-blue/20">
           </div>
           <div>
             <label for="contact-email" class="block text-sm font-semibold text-stone-700">Email address</label>
-            <input id="contact-email" type="email" disabled class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed">
+            <input id="contact-email" name="email" type="email" autocomplete="email" required class="mt-2 w-full rounded-2xl border border-stone-300 bg-white px-4 py-3 focus:border-parish-blue focus:outline-none focus:ring-2 focus:ring-parish-blue/20">
           </div>
           <div>
             <label for="contact-message" class="block text-sm font-semibold text-stone-700">Message</label>
-            <textarea id="contact-message" rows="5" disabled class="mt-2 w-full resize-none rounded-2xl border border-stone-300 bg-white px-4 py-3 disabled:cursor-not-allowed"></textarea>
+            <textarea id="contact-message" name="message" rows="5" required class="mt-2 w-full resize-y rounded-2xl border border-stone-300 bg-white px-4 py-3 focus:border-parish-blue focus:outline-none focus:ring-2 focus:ring-parish-blue/20"></textarea>
           </div>
-          <button type="button" disabled class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white opacity-60 disabled:cursor-not-allowed">Send Message</button>
+          <button type="submit" class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white hover:opacity-90 transition">Send Message</button>
         </form>
       </div>
 
