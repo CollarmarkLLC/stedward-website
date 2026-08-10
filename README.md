@@ -13,7 +13,8 @@ resilience and discovery, but it must not become a second writable authority.
 
 - `src/posts/` — Weekly bulletins (one `.md` file per week)
 - `src/images/` — Photos and bulletin social images
-- Homepage (`index.njk`) lists the six newest bulletins in reverse chronological order
+- Homepage (`index.njk`) presents the six newest bulletins, a disabled
+  subscription-form stub, and the parish Mass, Confession, and catechesis times
 - `past-bulletins.njk` provides the remaining archive in pages of 24 bulletins
 
 ## Adding a New Bulletin (Very Simple)

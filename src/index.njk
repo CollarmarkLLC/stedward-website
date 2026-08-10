@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Weekly Bulletin
+title: Home
 ---
 
 <!-- Hero -->
@@ -82,3 +82,83 @@ title: Weekly Bulletin
     </a>
   </div>
 </div>
+
+<!-- Bulletin subscription stub -->
+<section class="bg-stone-100 border-y border-stone-200">
+  <div class="max-w-6xl mx-auto px-6 py-14 md:py-16">
+    <div class="grid gap-8 md:grid-cols-[1fr_1.1fr] md:items-center">
+      <div>
+        <span class="text-xs uppercase tracking-[2px] font-semibold text-parish-blue">Stay Connected</span>
+        <h2 class="text-4xl heading-serif mt-1">Subscribe to Our Bulletin</h2>
+        <p class="mt-3 text-stone-600 max-w-xl">
+          Sign up to receive the St. Edward bulletin by email each week.
+        </p>
+      </div>
+
+      <div class="rounded-3xl bg-white border border-stone-200 p-6 md:p-8 shadow-sm">
+        <form class="flex flex-col sm:flex-row gap-3" aria-label="Bulletin subscription coming soon">
+          <label for="bulletin-email" class="sr-only">Email address</label>
+          <input id="bulletin-email" type="email" placeholder="Email address" disabled class="min-w-0 flex-1 rounded-full border border-stone-300 bg-stone-50 px-5 py-3 text-stone-500 disabled:cursor-not-allowed">
+          <button type="button" disabled class="rounded-full bg-parish-blue px-6 py-3 font-semibold text-white opacity-60 disabled:cursor-not-allowed">
+            Sign Up
+          </button>
+        </form>
+        <p class="mt-3 text-xs text-stone-500">Email subscriptions are coming soon. This form is not yet active.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Parish schedule -->
+<section id="times" class="bg-white">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <div class="max-w-2xl mb-10">
+      <span class="text-xs uppercase tracking-[2px] font-semibold text-parish-blue">Worship &amp; Formation</span>
+      <h2 class="text-4xl md:text-5xl heading-serif mt-1">Mass, Confession &amp; Catechesis</h2>
+      <p class="mt-3 text-stone-600">Regular parish times at St. Edward the Confessor.</p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <article class="rounded-3xl border border-stone-200 bg-stone-50 p-7">
+        <h3 class="text-2xl heading-serif text-parish-blue">Holy Mass on Weekends</h3>
+        <dl class="mt-5 space-y-4">
+          <div><dt class="font-semibold">Saturday</dt><dd class="text-stone-600">5:30p</dd></div>
+          <div><dt class="font-semibold">Sunday</dt><dd class="text-stone-600">8:00a (TLM), 9:30a</dd></div>
+        </dl>
+      </article>
+
+      <article class="rounded-3xl border border-stone-200 bg-stone-50 p-7">
+        <h3 class="text-2xl heading-serif text-parish-blue">Holy Mass on Special Occasions</h3>
+        <dl class="mt-5 space-y-4">
+          <div><dt class="font-semibold">First Friday with Benediction</dt><dd class="text-stone-600">5:30p</dd></div>
+          <div><dt class="font-semibold">Holy Days of Obligation</dt><dd class="text-stone-600">As published</dd></div>
+        </dl>
+      </article>
+
+      <article class="rounded-3xl border border-stone-200 bg-stone-50 p-7">
+        <h3 class="text-2xl heading-serif text-parish-blue">Holy Mass on Weekdays</h3>
+        <dl class="mt-5 space-y-4">
+          <div><dt class="font-semibold">Tuesday, Wednesday</dt><dd class="text-stone-600">9:00a</dd></div>
+          <div><dt class="font-semibold">Thursday</dt><dd class="text-stone-600">9:00a (Legacy Nursing Home)</dd></div>
+          <div><dt class="font-semibold">Friday</dt><dd class="text-stone-600">5:30p</dd></div>
+        </dl>
+      </article>
+
+      <article class="rounded-3xl border border-stone-200 bg-stone-50 p-7 lg:col-span-2">
+        <h3 class="text-2xl heading-serif text-parish-blue">Confession</h3>
+        <dl class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div><dt class="font-semibold">Friday</dt><dd class="text-stone-600">5:00p</dd></div>
+          <div><dt class="font-semibold">Saturday</dt><dd class="text-stone-600">5:00p</dd></div>
+          <div><dt class="font-semibold">Sunday</dt><dd class="text-stone-600">9:00a</dd></div>
+          <div><dt class="font-semibold">Other Times</dt><dd class="text-stone-600">By appointment</dd></div>
+        </dl>
+      </article>
+
+      <article class="rounded-3xl bg-parish-blue p-7 text-white">
+        <h3 class="text-2xl heading-serif">Catechesis</h3>
+        <p class="mt-5 font-semibold">Sunday Morning Catechism</p>
+        <p class="mt-1 text-white/75">After the 9:30a Mass</p>
+      </article>
+    </div>
+  </div>
+</section>

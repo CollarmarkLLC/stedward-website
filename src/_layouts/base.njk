@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title or "St. Edward the Confessor" }} | St. Edward Catholic Church, Tallulah</title>
+  <title>{% if title and title != "Home" %}{{ title }} | {% endif %}St. Edward Catholic Church, Tallulah</title>
   <link rel="icon" href="/images/glyph/St%20Edward%20Glyph%20Outlines.svg" type="image/svg+xml">
 
   <!-- Local Tailwind CSS (built) -->
