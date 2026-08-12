@@ -55,6 +55,32 @@ until their bulletin date arrives.
 
 5. Commit and push — Netlify will automatically rebuild the site.
 
+### Converting a Google Docs Markdown Export
+
+Download the approved Google document as Markdown (`.md`). Preview the converted
+website post on stdout:
+
+```bash
+pnpm bulletin:convert /path/to/Bulletin.md --date 2026-08-16 \
+  --title "Twentieth Sunday in Ordinary Time" --color green
+```
+
+The title and color options are unnecessary when the date exists in
+`data/bulletin-sundays-2019-2026.json`. To create a reviewable draft, add an
+explicit output path:
+
+```bash
+pnpm bulletin:convert /path/to/Bulletin.md --date 2026-08-16 \
+  --title "Twentieth Sunday in Ordinary Time" --color green \
+  --output /tmp/2026-08-16.md
+```
+
+The converter never overwrites an existing file, commits, pushes, or publishes.
+It discards the Google masthead, reorders the recurring sections to match the
+website archive, normalizes common Google Markdown escapes, and prints warnings
+for missing or duplicate sections. Review the draft before copying it into
+`src/posts/`.
+
 ## Local Development
 
 ```bash

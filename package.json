@@ -7,7 +7,9 @@
     "build:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css --minify",
     "build": "eleventy && pnpm run build:css",
     "serve": "pnpm run build && eleventy --serve",
-    "start": "pnpm run serve"
+    "start": "pnpm run serve",
+    "bulletin:convert": "python3 scripts/convert_bulletin.py",
+    "test:bulletin": "python3 -m unittest tests/test_convert_bulletin.py"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
