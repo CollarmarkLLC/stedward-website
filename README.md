@@ -88,6 +88,26 @@ pnpm install
 pnpm run serve
 ```
 
+## Release Gate
+
+Run the same production verification used by GitHub Actions before publishing:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm run verify
+```
+
+`verify` runs the bulletin converter tests, builds the Eleventy and Tailwind
+site, checks generated document metadata, resolves every generated local link
+and asset, verifies compiled CSS, and confirms both Netlify forms. Enable the
+tracked pre-push gate once per clone with:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+The `release-gate / verify` GitHub status is intended to be required on `main`.
+
 ## Deployment
 
 - Push to the connected GitHub repository.

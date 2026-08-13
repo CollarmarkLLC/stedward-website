@@ -9,7 +9,9 @@
     "serve": "pnpm run build && eleventy --serve",
     "start": "pnpm run serve",
     "bulletin:convert": "python3 scripts/convert_bulletin.py",
-    "test:bulletin": "python3 -m unittest tests/test_convert_bulletin.py"
+    "test:bulletin": "python3 -m unittest tests/test_convert_bulletin.py",
+    "test:site": "node --test tests/site-output.test.mjs",
+    "verify": "pnpm run test:bulletin && pnpm run build && pnpm run test:site"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
