@@ -1,3 +1,5 @@
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/images");
@@ -39,6 +41,31 @@ module.exports = function(eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
       return b.date - a.date;
     }).slice(6);
+  });
+
+  // The RSS plugin reverses its source collection before rendering.
+  eleventyConfig.addCollection("feedPosts", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md").sort((a, b) => {
+      return a.date - b.date;
+    });
+  });
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "feedPosts",
+      limit: 20
+    },
+    metadata: {
+      language: "en",
+      title: "St. Edward Parish Bulletins",
+      subtitle: "Weekly bulletins from St. Edward the Confessor Catholic Church in Tallulah, Louisiana.",
+      base: "https://saintedwardtallulah.church/",
+      author: {
+        name: "St. Edward the Confessor Catholic Church"
+      }
+    }
   });
 
   return {

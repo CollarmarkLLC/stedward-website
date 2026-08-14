@@ -79,3 +79,20 @@ test("production CSS is compiled and both Netlify forms are present", async () =
     assert.match(homepage, new RegExp(`name=["']form-name["'][^>]+value=["']${name}["']`, "i"));
   }
 });
+
+test("Atom feed publishes the newest twenty bulletins with canonical URLs", async () => {
+  const feed = await readFile(join(outputRoot, "feed.xml"), "utf8");
+  assert.match(feed, /^<\?xml version="1\.0" encoding="utf-8"\?>/);
+  assert.match(feed, /<feed xmlns="http:\/\/www\.w3\.org\/2005\/Atom"/);
+  assert.match(feed, /<title>St\. Edward Parish Bulletins<\/title>/);
+  assert.match(feed, /https:\/\/saintedwardtallulah\.church\/posts\/2026-08-16\//);
+  assert.match(feed, /<title>Twentieth Sunday in Ordinary Time<\/title>/);
+  assert.equal((feed.match(/<entry>/g) || []).length, 20);
+  assert.doesNotMatch(feed, /https:\/\/stedwardtallulah\.church/);
+
+  const homepage = await readFile(join(outputRoot, "index.html"), "utf8");
+  assert.match(
+    homepage,
+    /<link rel="alternate" type="application\/atom\+xml" title="St\. Edward Parish Bulletins" href="\/feed\.xml">/
+  );
+});

@@ -6,6 +6,7 @@
   <meta name="description" content="{{ description or 'Bulletins, Mass times, confession, catechesis, and parish information for St. Edward the Confessor Catholic Church in Tallulah, Louisiana.' }}">
   <title>{% if title and title != "Home" %}{{ title }} | {% endif %}St. Edward Catholic Church, Tallulah</title>
   <link rel="icon" href="/images/glyph/St%20Edward%20Glyph%20Outlines.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/atom+xml" title="St. Edward Parish Bulletins" href="/feed.xml">
 
   <!-- Local Tailwind CSS (built) -->
   <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -57,6 +58,7 @@
         
         <div class="flex flex-col md:items-end gap-2 text-sm">
           <a href="/past-bulletins/" class="hover:text-white transition">Past Bulletins</a>
+          <a href="/feed.xml" class="hover:text-white transition">Subscribe via RSS</a>
         </div>
       </div>
       

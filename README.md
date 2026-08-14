@@ -42,9 +42,9 @@ bulletin. The image filename is the lowercase liturgical color.
 The current source archive for historical reconciliation is
 `/Users/ryan/My Drive (frhumphries@gmail.com)/St Edward/Bulletin`. Copy source
 files into this repository; never move or modify the source archive. As of
-2026-08-09, the website contains one post for every Sunday from 2019-01-06
-through 2026-08-09. Future dated source templates are intentionally excluded
-until their bulletin date arrives.
+2026-08-14, the website contains one post for every Sunday from 2019-01-06
+through 2026-08-16. Future-dated website posts are intentionally excluded until
+their bulletin is ready to publish.
 
 3. Add the rest of the bulletin content below the frontmatter.
 
@@ -81,6 +81,14 @@ website archive, normalizes common Google Markdown escapes, and prints warnings
 for missing or duplicate sections. Review the draft before copying it into
 `src/posts/`.
 
+## Bulletin Feed
+
+Eleventy generates a full-content Atom feed at `/feed.xml` from the newest 20
+entries in the bulletin collection. The shared page layout advertises the feed
+for automatic discovery, and visible subscription links appear in the footer
+and bulletin archive. Feed metadata and entry URLs use the canonical
+`https://saintedwardtallulah.church/` origin.
+
 ## Local Development
 
 ```bash
@@ -99,7 +107,8 @@ pnpm run verify
 
 `verify` runs the bulletin converter tests, builds the Eleventy and Tailwind
 site, checks generated document metadata, resolves every generated local link
-and asset, verifies compiled CSS, and confirms both Netlify forms. Enable the
+and asset, validates the Atom feed and canonical URLs, verifies compiled CSS,
+and confirms both Netlify forms. Enable the
 tracked pre-push gate once per clone with:
 
 ```bash
