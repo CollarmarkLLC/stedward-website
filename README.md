@@ -53,6 +53,14 @@ their bulletin is ready to publish.
 
 4. Ensure the corresponding color image exists in `src/images/bulletins/`.
 
+   New bulletins published through Aragorn's governed `bulletin.publish` action
+   also receive a generated `socialImage` field pointing to a dated 1200×630
+   JPEG under `src/images/bulletins/social/`. The shared Eleventy layout turns
+   that field into absolute canonical, Open Graph, and large-card metadata.
+   Historical posts without `socialImage` remain valid and are not backfilled.
+   The generated image and post are committed together; Facebook posting stays
+   manual.
+
 5. Commit and push — Netlify will automatically rebuild the site.
 
 ### Converting a Google Docs Markdown Export
@@ -106,9 +114,9 @@ pnpm run verify
 ```
 
 `verify` runs the bulletin converter tests, builds the Eleventy and Tailwind
-site, checks generated document metadata, resolves every generated local link
-and asset, validates the Atom feed and canonical URLs, verifies compiled CSS,
-and confirms both Netlify forms. Enable the
+site, checks generated document and social-card metadata, resolves every
+generated local link and asset, validates the Atom feed and canonical URLs,
+verifies compiled CSS, and confirms both Netlify forms. Enable the
 tracked pre-push gate once per clone with:
 
 ```bash

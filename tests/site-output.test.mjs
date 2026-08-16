@@ -53,7 +53,23 @@ test("generated pages have essential document metadata", async () => {
     assert.match(html, /<html\b[^>]*\blang=["'][^"']+/i, `${label}: missing language`);
     assert.match(html, /<title>[^<]+<\/title>/i, `${label}: missing title`);
     assert.match(html, /<meta\b[^>]*\bname=["']viewport["']/i, `${label}: missing viewport`);
+    assert.match(html, /<link\b[^>]*\brel=["']canonical["'][^>]+href=["']https:\/\/saintedwardtallulah\.church\//i, `${label}: missing canonical URL`);
   }
+});
+
+test("social metadata contract is complete whenever a social image is present", async () => {
+  const layout = await readFile(join(projectRoot, "src/_layouts/base.njk"), "utf8");
+  for (const field of [
+    "og:type", "og:title", "og:description", "og:url", "og:image",
+    "og:image:type", "og:image:width", "og:image:height", "og:image:alt",
+    "og:site_name", "og:locale", "twitter:card", "twitter:title",
+    "twitter:description", "twitter:image",
+  ]) {
+    assert.match(layout, new RegExp(`["']${field}["']`), `layout is missing ${field}`);
+  }
+  assert.match(layout, /twitter:card["'] content=["']summary_large_image/);
+  assert.match(layout, /og:image:width["'] content=["']1200/);
+  assert.match(layout, /og:image:height["'] content=["']630/);
 });
 
 test("all generated local links and assets resolve", async () => {
