@@ -53,7 +53,9 @@ their bulletin is ready to publish.
 
 4. Ensure the corresponding color image exists in `src/images/bulletins/`.
 
-   New bulletins published through Aragorn's governed `bulletin.publish` action
+   The governed `bulletin.stage` action takes the date, title, and color from
+   the normalized modern output of Liturgical Calendar, not from the Google
+   Docs export. New bulletins published through Aragorn's governed `bulletin.publish` action
    also receive a generated `socialImage` field pointing to a dated 1200×630
    JPEG under `src/images/bulletins/social/`. The shared Eleventy layout turns
    that field into absolute canonical, Open Graph, and large-card metadata.

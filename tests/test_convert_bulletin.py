@@ -1,4 +1,6 @@
 import importlib.util
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -53,6 +55,24 @@ Please pray.
         sections, warnings = converter.extract_sections("## Thoughts from Fr. Ryan\nText")
         self.assertEqual("Text", sections["Thoughts from Fr. Ryan"])
         self.assertIn("missing section: Upcoming Events", warnings)
+
+    def test_reads_title_and_color_from_normalized_liturgical_calendar(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            year = root / "2026"
+            year.mkdir()
+            (year / "liturgical-core.json").write_text(json.dumps({
+                "days": [{
+                    "date": "2026-08-23",
+                    "liturgical": {"modern": {"selected": {
+                        "title": "21st Sunday of Ordinary Time", "colors": ["green"],
+                    }}},
+                }],
+            }), encoding="utf-8")
+            self.assertEqual(
+                converter.liturgical_calendar_metadata(root, "2026-08-23"),
+                ("21st Sunday of Ordinary Time", "green"),
+            )
 
 
 if __name__ == "__main__":

@@ -138,6 +138,24 @@ def projection_metadata(path: Path, date: str) -> tuple[str, str] | None:
     return None
 
 
+def liturgical_calendar_metadata(root: Path, date: str) -> tuple[str, str] | None:
+    """Read the selected modern observance from Liturgical Calendar output."""
+    try:
+        payload = json.loads((root / date[:4] / "liturgical-core.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    for day in payload.get("days", []):
+        if day.get("date") != date:
+            continue
+        selected = day.get("liturgical", {}).get("modern", {}).get("selected", {})
+        title = selected.get("display_title") or selected.get("title")
+        colors = selected.get("colors") or []
+        if title and colors and isinstance(colors[0], str):
+            return str(title), colors[0]
+        return None
+    return None
+
+
 def render(date: str, title: str, color: str, sections: dict[str, str]) -> str:
     title_yaml = title.replace('"', '\\"')
     parts = [
@@ -170,6 +188,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--date", required=True, help="Bulletin Sunday (YYYY-MM-DD)")
     parser.add_argument("--title", help="Required when the Sunday projection has no entry")
     parser.add_argument("--color", help="Required when the Sunday projection has no entry")
+    parser.add_argument(
+        "--liturgical-calendar-root",
+        type=Path,
+        help="Normalized Liturgical Calendar output; supplies the modern title and color by date",
+    )
     parser.add_argument("--output", type=Path, help="Write a draft; stdout is the default")
     parser.add_argument(
         "--projection",
@@ -181,7 +204,10 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    metadata = projection_metadata(args.projection, args.date)
+    metadata = (
+        liturgical_calendar_metadata(args.liturgical_calendar_root, args.date)
+        if args.liturgical_calendar_root else None
+    ) or projection_metadata(args.projection, args.date)
     title = args.title or (metadata[0] if metadata else None)
     color = args.color or (metadata[1] if metadata else None)
     if not title or not color:
