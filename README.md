@@ -35,13 +35,15 @@ image: /images/bulletins/green.jpg
 ```
 
 The historical bulletin collection uses exactly these three frontmatter fields.
-Titles and liturgical colors come from the generated Sunday projection in
-`data/bulletin-sundays-2019-2026.json`; do not infer them from prose in an old
-bulletin. The image filename is the lowercase liturgical color.
+Titles and liturgical colors come from the normalized modern output of
+Liturgical Calendar; do not infer them from prose in an old bulletin. The image
+filename is the lowercase liturgical color.
 
-The current source archive for historical reconciliation is
-`/Users/ryan/My Drive (frhumphries@gmail.com)/St Edward/Bulletin`. Copy source
-files into this repository; never move or modify the source archive. As of
+The PDF archive for historical reconciliation is
+`/Users/ryan/My Drive (frhumphries@gmail.com)/St Edward/Bulletin`. The
+governed staging action archives the PDF there and writes the reviewable
+Markdown draft directly to `src/posts/`; never move or modify the PDF archive.
+As of
 2026-08-14, the website contains one post for every Sunday from 2019-01-06
 through 2026-08-16. Future-dated website posts are intentionally excluded until
 their bulletin is ready to publish.
@@ -55,8 +57,9 @@ their bulletin is ready to publish.
 
    The governed `bulletin.stage` action takes the date, title, and color from
    the normalized modern output of Liturgical Calendar, not from the Google
-   Docs export. New bulletins published through Aragorn's governed `bulletin.publish` action
-   also receive a generated `socialImage` field pointing to a dated 1200×630
+   Docs export, and creates this draft in `src/posts/` for proofreading.
+   `bulletin.publish` then uses that reviewed draft and adds a generated
+   `socialImage` field pointing to a dated 1200×630
    JPEG under `src/images/bulletins/social/`. The shared Eleventy layout turns
    that field into absolute canonical, Open Graph, and large-card metadata.
    Historical posts without `socialImage` remain valid and are not backfilled.
@@ -88,8 +91,8 @@ pnpm bulletin:convert /path/to/Bulletin.md --date 2026-08-16 \
 The converter never overwrites an existing file, commits, pushes, or publishes.
 It discards the Google masthead, reorders the recurring sections to match the
 website archive, normalizes common Google Markdown escapes, and prints warnings
-for missing or duplicate sections. Review the draft before copying it into
-`src/posts/`.
+for missing or duplicate sections. The governed staging action writes its
+reviewable output directly to `src/posts/`.
 
 ## Bulletin Feed
 
