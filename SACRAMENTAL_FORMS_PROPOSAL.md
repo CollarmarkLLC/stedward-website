@@ -1,58 +1,81 @@
-# Sacramental Signup Forms — Replacement Proposal
+# Parish Register Forms — Replacement Proposal
 
 **Status:** Proposal only — no live form, form handler, notification, deployment, or historical-submission access has been changed.
 
 ## Scope and source boundary
 
-This proposal covers the requested First Holy Communion and Confirmation signup forms. The supplied legacy screenshots are a design reference only. They were reviewed locally and are not copied into this repository. No past submission was opened, copied, or retained.
+St. Edward needs a public inquiry form for every parish register: Baptism, Confirmation, First Holy Communion, Marriage, and Funerals/Death. The private Registers manifest is the authority for each register’s required record fields. The supplied legacy screenshots are a local design reference only; they are not copied into this repository, and no historical submission was opened, copied, or retained.
 
-The screenshots include First Holy Communion, plus unrelated Wedding, Baptism, and Census forms. They do not include a Confirmation form. Accordingly, the First Holy Communion inventory below is evidence-based; Confirmation must remain a short requirements decision before it is designed or built.
+Each public form gathers the parishioner- or family-provided facts needed to begin the process and prepare the private record. The parish office completes the register number, officiant, final sacramental or funeral date and place, official remarks, and other facts that arise during pastoral preparation. A public submission is never itself the canonical register entry.
 
-## Observed First Holy Communion intake
+## Shared design and workflow
 
-The legacy First Holy Communion screen visibly requests:
+Create one `/forms/` index and five accessible pages: `/forms/baptism/`, `/forms/confirmation/`, `/forms/first-holy-communion/`, `/forms/marriage/`, and `/forms/funeral/`. Each page should say that submitting begins parish follow-up and does not schedule, approve, or complete the associated rite or register entry.
 
-- Child’s first and last name (required)
-- Date of Baptism
-- Place of Baptism (city, state, country)
-- A photo of the baptismal certificate
-- Father’s first and last name (required)
-- Mother’s first and last name at birth (required)
-- Mailing address: country, address lines, city, state, and ZIP code (the first address line, city, state, and ZIP code are required)
+All forms use a named primary contact, email, phone, and clear consent for parish follow-up. For a minor, collect the parent or guardian’s contact details and only collect the minor’s own contact information where the parish confirms it is necessary. Validate required inputs on the server, use suitable email/phone/date controls in the browser, and provide a private alternative for families who cannot use an online form.
 
-The supplied view does not show a contact person, contact method, privacy notice, confirmation page, submission receipt, or parish notification recipient. Those parts of the workflow are therefore unknown, not implied by the legacy form.
+The approved private recipient receives the submission. Parish staff or clergy then review it, contact the family, complete preparation, and enter verified facts in the private register. The public acknowledgment should confirm receipt without repeating any sensitive content.
 
-## Minimal replacement
+## Register-specific intake fields
 
-Create two separate public pages under a future `/sacraments/` section: one for First Holy Communion and one for Confirmation. Each page should explain that submitting the form begins a parish follow-up process and does not by itself schedule or guarantee reception of the sacrament.
+### Baptism
 
-For First Holy Communion, retain the observed child, baptism, parent-name, and mailing-address fields, but use the least data necessary to complete the parish’s actual preparation and records workflow. In particular, confirm whether a baptismal-certificate upload is genuinely required at initial inquiry. If it is, limit it to common image/PDF formats, publish a clear alternative for families who cannot upload it, and keep the file outside the website repository.
+- Child’s baptismal and family name; place and date of birth; proposed baptism date if known
+- Father’s name and mother’s maiden name
+- Sponsor or sponsors
+- Primary contact name, phone, and email; certificate recipient name and mailing address
+- Optional, purpose-limited notes for circumstances the office needs before follow-up
 
-For Confirmation, do not infer fields from the unrelated forms. Before implementation, confirm the required information, whether the registrant is a minor, who may submit on the candidate’s behalf, and whether any certificate or other document is needed.
+The parish completes the register number, final baptism date, minister, later Confirmation/marriage annotations, and official remarks.
 
-## Privacy, validation, and retention
+### Confirmation
 
-- Use server-side form handling only after Ryan approves the provider, notification recipients, access path, and retention/deletion practice.
-- Collect only fields needed for sacramental preparation and follow-up; avoid free-text questions unless a specific pastoral purpose requires them.
-- Mark only confirmed necessary fields as required. Use appropriate client-side input types for email, telephone, and date, but treat server-side validation as authoritative.
-- State in plain language who receives the submission, why the parish needs it, and how a family may contact the parish with questions or corrections.
-- Do not put submission data, uploaded documents, recipient addresses, or provider credentials in Git, the public site, build output, or screenshots.
-- Add a confirmation page or acknowledgment that says the parish received the request without echoing sensitive details.
+- Candidate’s baptismal and family name; confirmation name; date and place of baptism; residence; date of birth or age
+- Parents’ names and sponsor
+- Candidate contact details only when approved as necessary; parent or guardian contact details for a minor
+- Certificate recipient name and mailing address
 
-## Proposed follow-up workflow
+The parish completes the register number, final Confirmation date, minister, and official remarks.
 
-1. A parent, guardian, or adult candidate submits the approved form.
-2. The approved private parish recipient receives a notification through the approved provider.
-3. Parish staff or clergy review the request in the private system and contact the family using the approved contact method.
-4. The parish separately confirms eligibility, preparation, documents, dates, and any needed pastoral conversation.
-5. The submission is retained or deleted according to the parish’s approved records practice; it is not used as the canonical sacramental register.
+### First Holy Communion
+
+- Candidate’s baptismal and family name; place and date of birth; age calculated from date of birth where needed; date and place of baptism; residence
+- Parents’ names
+- Primary contact name, phone, and email; certificate recipient name and mailing address
+- Optional, purpose-limited remarks
+
+The parish completes the official register entry and any later pastoral notes. The visible legacy request for a baptismal-certificate photo should be included only if Ryan approves both its necessity at initial inquiry and its private storage location.
+
+### Marriage
+
+- Each contracting party’s name, residence, place and date of baptism, and parent information
+- Proposed marriage date and place, witnesses if known, and marriage-license number when available
+- Both parties’ contact name, phone, and email
+- Purpose-limited fields for banns, dispensations, or special circumstances only when the parish confirms they belong in online intake
+
+The parish completes the register number, verified marriage date/place, minister, final witnesses, dispensations, and official remarks. The form must clearly state that a requested date is not reserved until the parish confirms it.
+
+### Funerals / Death
+
+- Deceased’s name, residence, age or date of birth, date of death, known sacraments, next of kin/spouse/parent information, and desired contact person
+- Proposed funeral and burial details if known, including date/place and clergy preference where appropriate
+- Contact name, phone, and email; optional, purpose-limited pastoral remarks
+
+The parish completes the register number, verified sacramental and death details, officiant, final burial details, and official remarks. The page should include a prominent route for urgent pastoral contact that does not depend on an online form.
+
+## Privacy, documents, and retention
+
+- Use server-side handling only after Ryan approves the provider, specific notification recipient(s), access path, and retention/deletion practice.
+- Keep submission data, documents, recipient addresses, and provider credentials out of Git, public pages, build output, and screenshots.
+- Do not request uploads unless a specific register workflow needs one. When approved, restrict type/size, state why it is needed, provide an offline alternative, and store it only in the approved private system.
+- State in plain language who receives a submission, why it is needed, how long it is retained, and how a family can correct it.
 
 ## Decisions needed before implementation
 
-1. Provide the Confirmation legacy form or a concise list of its required fields and intended workflow.
-2. Confirm whether First Holy Communion must collect a baptismal-certificate upload at the initial step, and where that upload may be stored.
-3. Approve the form provider and the specific private notification recipient(s), including who can access submissions.
-4. Approve the data-retention/deletion practice and the public privacy wording.
-5. Approve the final field sets and copy before any form is enabled.
+1. Approve the proposed five-form scope and the public-intake/private-register split for each register.
+2. Confirm which optional or sensitive fields are necessary at initial inquiry, including whether either sacramental form needs document upload.
+3. Confirm minor-submitter and candidate-contact rules.
+4. Approve the form provider, exact private notification recipient(s), access model, and retention/deletion practice.
+5. Approve the final page copy and synthetic test plan before form handling is enabled.
 
-After those decisions, the implementation can add the pages and a synthetic end-to-end submission test. Publishing, activating form handling, or sending a real notification remains a separate explicit approval.
+After those decisions, implementation can add the pages and use synthetic data for end-to-end testing. Publishing, activating form handling, or sending any notification remains a separate explicit approval.
