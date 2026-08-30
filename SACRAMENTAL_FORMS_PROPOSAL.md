@@ -4,13 +4,13 @@
 
 ## Scope and source boundary
 
-St. Edward needs a public inquiry form for every parish register: Baptism, Confirmation, First Holy Communion, Marriage, and Funerals/Death. It also needs a parish Census form and a Mausoleum Application stub. The private Registers manifest is the authority for each register’s required record fields. The supplied legacy screenshots are a local design reference only; they are not copied into this repository, and no historical submission was opened, copied, or retained.
+St. Edward needs a public inquiry form for every parish register: Baptism, Confirmation, First Holy Communion, Marriage, and Funerals/Death. It also needs a parish Census form, a Baptismal Certificate Request form, and a Mausoleum Application stub. The private Registers manifest is the authority for each register’s required record fields. The supplied legacy screenshots are a local design reference only; they are not copied into this repository, and no historical submission was opened, copied, or retained.
 
 Each public form gathers the parishioner- or family-provided facts needed to begin the process and prepare the private record. The parish office completes the register number, officiant, final sacramental or funeral date and place, official remarks, and other facts that arise during pastoral preparation. A public submission is never itself the canonical register entry.
 
 ## Shared design and workflow
 
-Create one `/forms/` index and six accessible form pages: `/forms/baptism/`, `/forms/confirmation/`, `/forms/first-holy-communion/`, `/forms/marriage/`, `/forms/funeral/`, and `/forms/parish-census/`. Add `/forms/mausoleum-application/` as a non-collecting stub. Each active form page should say that submitting begins parish follow-up and does not schedule, approve, or complete the associated rite or register entry.
+Create one `/forms/` index and seven accessible form pages: `/forms/baptism/`, `/forms/confirmation/`, `/forms/first-holy-communion/`, `/forms/marriage/`, `/forms/funeral/`, `/forms/parish-census/`, and `/forms/baptismal-certificate-request/`. Add `/forms/mausoleum-application/` as a non-collecting stub. Each active form page should say that submitting begins parish follow-up and does not schedule, approve, or complete the associated rite or register entry.
 
 All forms use a named primary contact, email, phone, and clear consent for parish follow-up. For a minor, collect the parent or guardian’s contact details and only collect the minor’s own contact information where the parish confirms it is necessary. Validate required inputs on the server, use suitable email/phone/date controls in the browser, and provide a private alternative for families who cannot use an online form.
 
@@ -63,6 +63,12 @@ The parish completes the register number, verified marriage date/place, minister
 
 The parish completes the register number, verified sacramental and death details, officiant, final burial details, and official remarks. The page should include a prominent route for urgent pastoral contact that does not depend on an online form.
 
+## Baptismal Certificate Request
+
+The request form should collect the name recorded at Baptism; date and place of birth when known; date and place of Baptism when known; the requester’s name, relationship to the person named in the record, email, phone, and mailing address; and the certificate recipient name and mailing address if different. It should allow “unknown” only where that gives the parish office a useful search lead.
+
+The page must state that submitting a request does not establish entitlement to a certificate or guarantee issuance. Parish staff verify identity, authority, the record, any applicable fee, and the appropriate delivery method privately. Do not send certificate scans through the public form or surface register-search results, existence, or status in the public acknowledgment.
+
 ## Parish Census
 
 The legacy Census screen is the visible-field reference for this separate household-information form. It requests family surname; home-parish choice and, when applicable, the other parish; residential and different mailing addresses; one or two heads of household; preferred names, birthdays, mobile phone numbers, emails, and contact preferences; children or dependents living at home or away; and optional comments about pastoral needs or interest in parish service.
@@ -73,6 +79,10 @@ The replacement should use structured fields for household members and addresses
 
 Add a clearly labeled `/forms/mausoleum-application/` page and link it from the forms index. Until Ryan approves a specific application, pricing, payment, contract, recipient, and retention workflow, the page collects no data. It explains that applications are not yet available online and directs interested people to the approved parish office contact path. It must not imply availability, reservation, pricing, or a binding application.
 
+## Parish Manager portability
+
+These website forms are a stopgap, not a second parish-management system. Give every approved input a stable, documented field name and keep the public-form contract separate from provider-specific notification settings. Parish Manager can later reuse the same field contracts, validation rules, privacy copy, and synthetic fixtures, then migrate only deliberately retained submissions through an approved private process. The website must not create a parallel canonical register, census database, certificate-fulfillment system, or mausoleum application workflow.
+
 ## Privacy, documents, and retention
 
 - Use server-side handling only after Ryan approves the provider, specific notification recipient(s), access path, and retention/deletion practice.
@@ -82,10 +92,10 @@ Add a clearly labeled `/forms/mausoleum-application/` page and link it from the 
 
 ## Decisions needed before implementation
 
-1. Approve the six-form scope plus the non-collecting Mausoleum Application stub, and the public-intake/private-register split for each register.
+1. Approve the seven-form scope plus the non-collecting Mausoleum Application stub, and the public-intake/private-register split for each register.
 2. Confirm which optional or sensitive fields are necessary at initial inquiry, including whether either sacramental form needs document upload.
 3. Confirm minor-submitter and candidate-contact rules, plus the intended Census contact/retention practice.
 4. Approve the form provider, exact private notification recipient(s), access model, and retention/deletion practice.
-5. Approve the Mausoleum office-contact path and final page copy, then approve the synthetic test plan before any active form handling is enabled.
+5. Approve the Baptismal Certificate Request identity/authority review and delivery practice, the Mausoleum office-contact path, and final page copy; then approve the synthetic test plan before any active form handling is enabled.
 
 After those decisions, implementation can add the pages and use synthetic data for end-to-end testing. Publishing, activating form handling, or sending any notification remains a separate explicit approval.
