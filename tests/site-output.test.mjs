@@ -96,6 +96,27 @@ test("production CSS is compiled and both Netlify forms are present", async () =
   }
 });
 
+test("parish office request pages are static and collect no information", async () => {
+  const requestPages = [
+    "forms/index.html",
+    "forms/baptism/index.html",
+    "forms/confirmation/index.html",
+    "forms/first-holy-communion/index.html",
+    "forms/marriage/index.html",
+    "forms/funeral/index.html",
+    "forms/parish-census/index.html",
+    "forms/baptismal-certificate-request/index.html",
+    "forms/mausoleum-application/index.html"
+  ];
+
+  for (const relativePath of requestPages) {
+    const html = await readFile(join(outputRoot, relativePath), "utf8");
+    assert.match(html, /Online submission is not available yet|Online mausoleum applications are not available/);
+    assert.doesNotMatch(html, /<form\b/i);
+    assert.doesNotMatch(html, /data-netlify/i);
+  }
+});
+
 test("Atom feed publishes the newest twenty bulletins with canonical URLs", async () => {
   const feed = await readFile(join(outputRoot, "feed.xml"), "utf8");
   assert.match(feed, /^<\?xml version="1\.0" encoding="utf-8"\?>/);
